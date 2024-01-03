@@ -1,4 +1,4 @@
-package com.justahead.kvantbackend;
+package com.justahead.kvantbackend.model;
 
 import lombok.Data;
 

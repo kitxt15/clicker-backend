@@ -1,6 +1,7 @@
 package com.justahead.kvantbackend.service;
 
-import com.justahead.kvantbackend.User;
+import com.justahead.kvantbackend.model.User;
+import com.justahead.kvantbackend.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,7 +10,7 @@ import java.util.List;
 @Service
 public class UserService{
 
-    private final UserRepository UserRepository;
+    private final com.justahead.kvantbackend.repository.UserRepository UserRepository;
 
     public UserService(UserRepository UserRepository) {//внедили зависимость
         this.UserRepository = UserRepository;
@@ -28,9 +29,11 @@ public class UserService{
         return UserRepository.findByUsername(username);
     }
 
+    public boolean existByUsername(String username){return UserRepository.existsByUsername(username);}
 
-    public void delete(User user) {
 
+    public boolean delete(User user) {
+        return UserRepository.deleteByUsername(user.getUsername());
     }
 
 
@@ -49,9 +52,7 @@ public class UserService{
     }
 
 
-    public User findByUsername() {
-        return null;
-    }
+
 
 
 

@@ -1,10 +1,9 @@
-package com.justahead.kvantbackend.service;
+package com.justahead.kvantbackend.controller;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.justahead.kvantbackend.User;
+import com.justahead.kvantbackend.model.User;
+import com.justahead.kvantbackend.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.annotation.*;

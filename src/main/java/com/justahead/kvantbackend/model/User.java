@@ -1,4 +1,4 @@
-package com.justahead.kvantbackend;
+package com.justahead.kvantbackend.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
@@ -27,8 +27,8 @@ public class User {
     private String location;
 
 
-    @Column(name = "kvantamount")
-    private int kvantAmount;
+    @Column(name = "balance")
+    private int balance;
 
 
 
