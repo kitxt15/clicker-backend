@@ -20,6 +20,12 @@ public class User {
     @Column(name = "email")
     private String email;
 
+    @Column(name = "password")
+    private String password;
+
+    @Column(name = "location")
+    private String location;
+
 
     @Column(name = "kvantamount")
     private int kvantAmount;

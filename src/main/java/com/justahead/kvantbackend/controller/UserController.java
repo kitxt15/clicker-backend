@@ -23,6 +23,7 @@ public class UserController {
 
     @PostMapping(value = "/users")
     public ResponseEntity<?> create(@RequestBody User user){
+//        if(userService.existByUsername(user.getUsername()))
         userService.create(user);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
