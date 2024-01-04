@@ -13,16 +13,6 @@ public class Upgrade {
 
 
 
-    public double calcPrice(){
-
-        return price * Math.pow(multiplier, owned);
-    }
-
-    public void incrementOwned() {
-        this.owned++;
-    }
-
-
 
 
 }

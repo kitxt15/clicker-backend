@@ -1,3 +1,2 @@
 INSERT INTO users VALUES
-('user1', 'vpetrov@jr.com', 'pwd1', 'moscow', '100'),
-('user2', 'pvasechkin@jr.com', 'pwd2', 'tver', '200');
+('user', 1, 'pwd', 'email', 'location', 2);
